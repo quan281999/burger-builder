@@ -81,3 +81,9 @@ export const fetchOrders = (token, userId) => {
             })
     }
 }
+
+export const resetPurchaseState = () => {
+    return {
+        type: actionTypes.RESET_PURCHASE_STATE
+    }
+}

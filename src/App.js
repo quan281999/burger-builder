@@ -45,7 +45,7 @@ class App extends Component {
           <Route path='/logout' component={Logout}></Route>
           <Route path='/auth' component={asyncAuth}></Route>
           <Route path='/' exact component={BurgerBuilder}></Route>
-          <Redirect to ='/'></Redirect>
+          {/* <Redirect to ='/'></Redirect> */}
         </Switch>
       );
 

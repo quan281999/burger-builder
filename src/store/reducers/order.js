@@ -43,6 +43,11 @@ const fetchOrdersSuccess = (state, action) => {
     });
 }
 
+const resetPurchaseState = (state) => {
+    return updateObject(state, {
+        purchased: false
+    });
+}
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
@@ -53,6 +58,7 @@ const reducer = (state = initialState, action) => {
         case actionTypes.FETCH_ORDERS_START: return fetchOrdersStart(state);
         case actionTypes.FETCH_ORDERS_SUCCESS: return fetchOrdersSuccess(state, action);
         case actionTypes.FETCH_ORDERS_FAIL: return fetchOrdersFail(state);
+        case actionTypes.RESET_PURCHASE_STATE: return resetPurchaseState(state);
         default: return state;
     }
 }
