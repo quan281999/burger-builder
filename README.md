@@ -3,6 +3,8 @@
 A website that lets you freely choose the ingredients for your burger and order
 it (this is a website that I developed while following a course on Udemy).
 
+Visit the app at: https://my-burgers-quan-nguyen.web.app/
+
 ## Project Specifications
 
 - Can add or remove the ingredients (namely meat, salad, bacon, and cheese).
